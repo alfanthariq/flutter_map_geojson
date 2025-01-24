@@ -215,8 +215,8 @@ class GeoJsonParser {
           {
             markers.add(
               markerCreationCallback!(
-                  LatLng((f['geometry']['coordinates'][1] as num).toDouble(),
-                      (f['geometry']['coordinates'][0] as num).toDouble),
+                  LatLng(f['geometry']['coordinates'][1] as double).toDouble(),
+                      (f['geometry']['coordinates'][0] as num).toDouble()),
                   f['properties'] as Map<String, dynamic>),
             );
           }
