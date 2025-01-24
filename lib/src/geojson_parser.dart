@@ -304,10 +304,10 @@ class GeoJsonParser {
                   if (pathIndex == 0) {
                     // add to polygon's outer ring
                     outerRing
-                        .add(LatLng(coords[1] as double, coords[0] as double));
+                        .add(LatLng((coords[1] as num).toDouble(), (coords[0] as num).toDouble())););
                   } else {
                     // add it to a hole
-                    hole.add(LatLng(coords[1] as double, coords[0] as double));
+                    hole.add(LatLng((coords[1] as num).toDouble(), (coords[0] as num).toDouble())););
                   }
                 }
                 if (pathIndex > 0) {
